@@ -1,5 +1,3 @@
-# Pi-estimation-using-monte-carlo-simulation, runs 10,000 simulation and generates 1000 random points per simulation, estimates pi using the ratio between how points lie in a quarter circle
-
 import random
 import math
 
@@ -22,9 +20,9 @@ for simulation in range(number_simulations):
     estimates.append(pi_estimate)
 
 mean_estimate = sum(estimates) / number_simulations
-
+# Calculates average value of pi from the simulations
 error = abs(math.pi - mean_estimate)
-
+# Finds out how accurate the simulation was compared to the real value of pi
 print("Pi calculator using Monte Carlo simulation")
 print("Simulations:", number_simulations)
 print("Points per simulation:", number_points)
