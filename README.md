@@ -15,7 +15,7 @@ for simulation in range(number_simulations):
 
         if x**2 + y**2 <= 1:
             points_inside += 1
-
+# Uses the circle equation (x-a)^2 + (y-b)^2 = r^2 to check if the point is inside the circle
     pi_estimate = (points_inside / number_points) * 4
     estimates.append(pi_estimate)
 
