@@ -20,11 +20,12 @@ for simulation in range(number_simulations):
     estimates.append(pi_estimate)
 
 mean_estimate = sum(estimates) / number_simulations
-# Calculates average value of pi from the simulations
+# average value of pi from simulations
 error = abs(math.pi - mean_estimate)
-# Finds out how accurate the simulation was compared to the real value of pi
+# How far off we were
 print("Pi calculator using Monte Carlo simulation")
 print("Simulations:", number_simulations)
 print("Points per simulation:", number_points)
 print("Estimated value of Pi:", mean_estimate)
 print("Error:", error)
+# This software takes slightly longer to run than others, yet it creates 10 million points, giving an extremely accurate value of pi
